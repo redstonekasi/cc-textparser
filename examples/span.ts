@@ -39,9 +39,9 @@ export function parse(input: string) {
     }
     pos = cmd.index;
   }
+  result += parsed.substring(pos);
   if (inside)
     result += "</span>"
-  result += parsed.substring(pos);
 
   return result;
 }  
