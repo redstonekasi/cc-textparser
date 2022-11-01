@@ -1,0 +1,22 @@
+{
+  "name": "cc-textparser",
+  "version": "1.0.0",
+  "description": "A reimplementation of CrossCode's text parser",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "rimraf dist && tsc"
+  },
+  "keywords": [
+    "crosscode",
+    "formatting",
+    "parser"
+  ],
+  "author": "redstonekasi",
+  "license": "BSD-3-Clause",
+  "repository": "github:redstonekasi/cc-textparser",
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.4"
+  }
+}
