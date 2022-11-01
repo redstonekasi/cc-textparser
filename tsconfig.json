@@ -3,8 +3,9 @@
     "rootDir": "src",
     "outDir": "dist",
     "sourceMap": true,
-    "target": "ES2019",
-    "module": "CommonJS",
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "declaration": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true
   },

@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "A reimplementation of CrossCode's text parser",
   "main": "dist/index.js",
+  "type": "module",
   "scripts": {
-    "prepublishOnly": "npm run build",
+    "public": "pnpm run build && npm publish",
     "build": "rimraf dist && tsc"
   },
   "keywords": [
