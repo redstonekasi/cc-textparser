@@ -1,6 +1,6 @@
 {
   "name": "cc-textparser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A reimplementation of CrossCode's text parser",
   "main": "dist/index.js",
   "type": "module",

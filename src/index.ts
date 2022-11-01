@@ -72,6 +72,12 @@ export class TextParser<Stores extends any[]> {
         if (command.hasArgument) {
           let start = input.indexOf("[", skip);
           let end = input.indexOf("]", start);
+
+          const offset = input.substring(start, end).split("[").length - 2;
+          for (let i = 0; i < offset; i++) {
+            end = input.indexOf("]", end + 1);
+          }
+
           if (start !== skip + 2 || end === -1) {
             // result += input[skip];
             // this is actually just supposed to be a warning
